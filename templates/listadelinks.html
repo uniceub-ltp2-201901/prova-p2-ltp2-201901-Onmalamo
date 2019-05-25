@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Lista de links</h1>
+    <table border="1">
+        <tr>
+            <td>Link original</td>
+            <td>Link gerado</td>
+        </tr>
+        {% for url in urls %}
+         <li><tr>
+             <td><a>{{url[0]}}</a></td>
+             <td><a href="{{url[0]}}">{{url[1]}}</a></td>
+         </tr></li>
+        {% endfor %}
+        <a href="/">Voltar</a><br>
+    </table>
+</body>
+</html>
